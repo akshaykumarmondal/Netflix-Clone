@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css" integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./file.js" defer></script>
+</head>
+<body>
+    
+    <header class="header">
+        <video src="video/theboys.mp4" autoplay="true" type="video/mp4" muted="muted" id="video"></video>
+    
+        <nav>
+            <div class="logo_ul">
+                <img src="img/logo.png" alt="">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" id="series">Series</a>
+                    </li>
+                    <li>
+                        <a href="#">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_user">
+                <input type="text" placeholder="Search..." id="search_input">
+
+                <img src="Images/profile-photo.jpg" alt="">
+
+                <div class="search">
+
+                    <!-- <a href="#" class="card">
+                        <img src="img/the boys.jpg" alt="">
+
+                        <div class="content">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span>&#11088;9.6</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="img/the boys.jpg" alt="">
+
+                        <div class="content">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span>&#11088;9.6</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="img/the boys.jpg" alt="">
+
+                        <div class="content">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span>&#11088;9.6</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="img/the boys.jpg" alt="">
+
+                        <div class="content">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span>&#11088;9.6</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="img/the boys.jpg" alt="">
+
+                        <div class="content">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span>&#11088;9.6</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="img/the boys.jpg" alt="">
+
+                        <div class="content">
+                            <h3>The Boys</h3>
+                            <p>Action, 2021, <span>IMDB</span>&#11088;9.6</p>
+                        </div>
+                    </a> -->
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="plays">
+
+            <h1 class="title" id="title">
+                Money Heist
+            </h1>
+            <p>A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain</p>
+            <div class="details">
+                <h6>A Netflix Original film</h6>
+                <h5 id="gen">Thriller</h5>
+                <h4 id="date">2021</h4>
+                <h3 id="rate"><span>IMDB</span>&#11088;9.6</h3>
+            </div>
+            <div class="btns">
+                <a href="#" id="play">Watch<i class="bi bi-play fill"></i></a>
+                <a href="#" id="Download">Download<i class="bi bi-download"></i></a>
+            </div>
+        </div>
+
+        <section>
+            <h4>Popular</h4>
+            <i class="bi bi-chevron-left"></i>
+            <i class="bi bi-chevron-right"></i>
+            <div class="cards">
+                <!-- <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a> -->
+
+                <!-- <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="#" class="card">
+
+                    <img class="movie-poster" src="./img/the boys.jpg" alt="">
+                    <div class="rest-card">
+                        <img src="./img/the boys1.jpg" alt="">
+
+                        <div class="cont">
+                            <h4>The Boys</h4>
+                            <div class="sub">
+                                <p>Action, 2022</p>
+                                <h3><span>IMDB</span>&#11088;9.6</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </a> -->
+                
+            </div>
+        </section>
+
+    </header>
+
+</body>
+</html>
